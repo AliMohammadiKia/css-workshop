@@ -1,0 +1,9 @@
+.w-20 {
+  max-width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .w-sm-25 {
+    max-width: 25%;
+  }
+}
