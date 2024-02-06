@@ -7,3 +7,8 @@
     max-width: 25%;
   }
 }
+@media screen and (min-width: 768px) {
+  .w-md-100 {
+    max-width: 100%;
+  }
+}
