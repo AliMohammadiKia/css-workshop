@@ -1,5 +1,5 @@
-.w-20 {
-  max-width: 20%;
+.w-18 {
+  max-width: 18%;
 }
 .w-40 {
   min-width: 40%;
@@ -10,14 +10,35 @@
   column-gap: 1rem;
 }
 
+.min-w-1 {
+  min-width: 125px;
+}
+.min-w-2 {
+  min-width: 200px;
+}
+
+.footer-paragraph {
+  font-size: 14px;
+}
+
+.navbar-brand {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 400px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .w-sm-25 {
     max-width: 25%;
   }
-}
-@media screen and (min-width: 768px) {
   .w-md-100 {
     min-width: 100% !important;
     max-width: 100% !important;
+  }
+  .footer-paragraph {
+    font-size: 18px;
   }
 }

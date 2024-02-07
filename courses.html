@@ -32,7 +32,7 @@
             <img
               src="./img/logo.png"
               alt="Logo"
-              class="w-20 w-sm-25 me-2 img-fluid"
+              class="w-18 w-sm-25 me-1 me-sm-2 img-fluid"
             />
             AP Signals Bootcamp
           </a>
@@ -51,13 +51,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html#learning">What You'll Learn</a>
+                <a class="nav-link" href="./index.html#learning"
+                  >What You'll Learn</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./index.html#faq">Questions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./index.html#instructors">instructors</a>
+                <a class="nav-link" href="./index.html#instructors"
+                  >instructors</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./courses.html">Courses</a>
@@ -69,36 +73,77 @@
     </header>
 
     <main>
-      <div class="bg-white py-5 mt-5 mb-3">
+      <!-- Courses -->
+      <section class="bg-white py-5 mt-5 mb-4">
         <div class="container mt-5">
-          <button class="btn btn-primary mb-3" type="button" data-toggle="modal" data-target="#exampleModal">create course</button>
+          <!-- create course button -->
+          <button
+            class="btn btn-primary mb-3"
+            type="button"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            create course
+          </button>
+
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Create Course</h5>
-                  <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Create Course
+                  </h5>
+                  <button
+                    type="button"
+                    class="close btn btn-outline-danger"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                   <form>
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="courseName" placeholder="Javascript">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="courseName"
+                        placeholder="Javascript"
+                      />
                       <label for="courseName">Course name</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="courseSlug" placeholder="js">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="courseSlug"
+                        placeholder="js"
+                      />
                       <label for="courseSlug">Course slug</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="courseDescription" placeholder="Password">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="courseDescription"
+                        placeholder="Password"
+                      />
                       <label for="courseDescription">Course description</label>
                     </div>
 
                     <div class="d-flex justify-content-center">
-                      <button type="submit" class="btn btn-primary w-25">Create</button>
+                      <button type="submit" class="btn btn-primary w-25">
+                        Create
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -106,113 +151,124 @@
             </div>
           </div>
 
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th colspan="5" class="text-center lead py-3">Our Bootcamp Courses</th>
-              </tr>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Course Name</th>
-                <th scope="col">Course Slug</th>
-                <th scope="col">Course Description</th>
-                <th scope="col">Tools</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>HTML</td>
-                <td>html</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>CSS</td>
-                <td>css</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Bootstrap</td>
-                <td>bootstrap</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Git</td>
-                <td>git</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Github</td>
-                <td>github</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>JavaScript</td>
-                <td>js</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>Agile Methodology</td>
-                <td>agile</td>
-                <td>Lorem ipsum dolor sit amet.Edit</td>
-                <td>
-                  <button class="btn btn-success">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle text-center">
+              <thead>
+                <tr>
+                  <th colspan="5" class="text-center lead py-3">
+                    Our Bootcamp Courses
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" class="min-w-1">Course Name</th>
+                  <th scope="col" class="min-w-1">Course Slug</th>
+                  <th scope="col" class="min-w-2">Course Description</th>
+                  <th scope="col" class="min-w-2">Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>HTML</td>
+                  <td>html</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>CSS</td>
+                  <td>css</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Bootstrap</td>
+                  <td>bootstrap</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Git</td>
+                  <td>git</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Github</td>
+                  <td>github</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>JavaScript</td>
+                  <td>js</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Agile Methodology</td>
+                  <td>agile</td>
+                  <td>Lorem ipsum dolor sit amet.Edit</td>
+                  <td>
+                    <button class="btn btn-success">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="pt-3 pb-4 text-white">
       <div class="container">
-        <div
-          class="d-flex justify-content-center align-items-center position-relative"
-        >
-          <p class="text-center lead">Copyright © 2021 AP Signals Bootcamp</p>
+        <div class="position-relative">
+          <p class="text-center lead footer-paragraph">
+            Copyright © 2021 AP Signals Bootcamp
+          </p>
           <a href="#" class="position-absolute top-50 end-0 translate-middle">
             <i class="bi bi-arrow-up-circle fs-2"></i>
           </a>
         </div>
       </div>
-    </div>
     </footer>
 
     <!-- Bootstrap Script Link -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
