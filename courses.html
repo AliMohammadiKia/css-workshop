@@ -82,6 +82,7 @@
             type="button"
             data-toggle="modal"
             data-target="#exampleModal"
+            onclick="clickCreateButton()"
           >
             create course
           </button>
@@ -103,6 +104,7 @@
                   </h5>
                   <button
                     type="button"
+                    id="btnCloseModal"
                     class="close btn btn-outline-danger"
                     data-dismiss="modal"
                     aria-label="Close"
@@ -111,7 +113,8 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
+                  <form data-state="create">
+                    <input type="hidden" name="course-id" />
                     <div class="form-floating mb-3">
                       <input
                         type="text"
@@ -134,14 +137,18 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="courseDescription"
+                        id="courseDesc"
                         placeholder="Password"
                       />
                       <label for="courseDescription">Course description</label>
                     </div>
 
                     <div class="d-flex justify-content-center">
-                      <button type="submit" class="btn btn-primary w-25">
+                      <button
+                        type="submit"
+                        class="btn btn-primary w-25"
+                        id="btnSubmit"
+                      >
                         Create
                       </button>
                     </div>
@@ -168,8 +175,8 @@
                   <th scope="col" class="min-w-2">Tools</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
+              <tbody id="tableBody">
+                <!-- <tr>
                   <th scope="row">1</th>
                   <td>HTML</td>
                   <td>html</td>
@@ -178,67 +185,7 @@
                     <button class="btn btn-success">Edit</button>
                     <button class="btn btn-danger">Delete</button>
                   </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>CSS</td>
-                  <td>css</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Bootstrap</td>
-                  <td>bootstrap</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Git</td>
-                  <td>git</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Github</td>
-                  <td>github</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>JavaScript</td>
-                  <td>js</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">7</th>
-                  <td>Agile Methodology</td>
-                  <td>agile</td>
-                  <td>Lorem ipsum dolor sit amet.Edit</td>
-                  <td>
-                    <button class="btn btn-success">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
-                  </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
@@ -275,5 +222,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
